@@ -3,6 +3,7 @@ package proyecto.daw_1.proyecto.daw_1.controller.apirest;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import proyecto.daw_1.proyecto.daw_1.exception.ResourceNotFoundException;
@@ -16,7 +17,7 @@ import proyecto.daw_1.proyecto.daw_1.util.DtoUtil;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-
+@PreAuthorize("hasRole('ADMIN')")
 @AllArgsConstructor
 @RestController
 @Controller
@@ -89,12 +90,12 @@ public class UsuarioRestController {
                 .orElseThrow(() -> new ResourceNotFoundException("El usuario con el Id Nro. "+
                         id + " no existe."));
         oldUsuario.setNomusuario(usuario.getNomusuario());
-        oldUsuario.setApeusuario(usuario.getApeusuario());
+        oldUsuario.setNombresusuario(usuario.getNombresusuario());
+        oldUsuario.setApellidosusuario(usuario.getApellidosusuario());
         oldUsuario.setEmailusuario(usuario.getEmailusuario());
         oldUsuario.setTeleusuario(usuario.getTeleusuario());
         oldUsuario.setPassusuario(usuario.getPassusuario());
         oldUsuario.setEstadousuario(usuario.getEstadousuario());
-        oldUsuario.setRol(usuario.getRol());
         return new ResponseEntity<>(
                 usuarioService.guardar(oldUsuario), HttpStatus.OK
         );

@@ -7,6 +7,43 @@
 	},
 	"item": [
 		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/auth/login?usuario=osanti&password=123456",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"login"
+							],
+							"query": [
+								{
+									"key": "usuario",
+									"value": "osanti"
+								},
+								{
+									"key": "password",
+									"value": "123456"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "Usuario",
 			"item": [
 				{
@@ -15,6 +52,16 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIxIiwic3ViIjoib3NhbnRpIiwiYXV0aG9yaXRpZXMiOltdLCJpYXQiOjE3MDAzODAyODQsImV4cCI6MTcwMDM4MDU4NH0.c9oerdBQPP_IpepJQabWy8UEI9TU8QUdUMAGOn9ucO1q4QTipqXnJiiAx51HU5vCzZXj-IhbP32ptPJeTad50w",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"body": {
@@ -899,6 +946,219 @@
 				},
 				{
 					"name": "Estado",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"nomestado\": \"Otro estado actualizado\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/estado/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"estado",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MedioPago",
+			"item": [
+				{
+					"name": "Pago",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIxIiwic3ViIjoib3NhbnRpIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJpYXQiOjE3MDAzODYzNjUsImV4cCI6MTcwMDM4NjY2NX0.Lb-7-Pt4cLzG35YUq9uklbEyckJF1MvBEBJOZWhsiFmbRtv6xrKKMTnHM-WPuTEGXB2Hb6Ny0uZbv5qw5-0rwA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/pago",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"pago"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pago Filtro ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIxIiwic3ViIjoib3NhbnRpIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJpYXQiOjE3MDAzODYzNjUsImV4cCI6MTcwMDM4NjY2NX0.Lb-7-Pt4cLzG35YUq9uklbEyckJF1MvBEBJOZWhsiFmbRtv6xrKKMTnHM-WPuTEGXB2Hb6Ny0uZbv5qw5-0rwA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/pago/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"pago",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pago Filtro name",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIxIiwic3ViIjoib3NhbnRpIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJpYXQiOjE3MDAzODYzNjUsImV4cCI6MTcwMDM4NjY2NX0.Lb-7-Pt4cLzG35YUq9uklbEyckJF1MvBEBJOZWhsiFmbRtv6xrKKMTnHM-WPuTEGXB2Hb6Ny0uZbv5qw5-0rwA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/pago/name/a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"pago",
+								"name",
+								"a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pago",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIxIiwic3ViIjoib3NhbnRpIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJpYXQiOjE3MDAzODY3NDIsImV4cCI6MTcwMDM4NzA0Mn0.0cdbvTc2U7e0JwwtjmwaERGrpcPZFSh50Prxt964xENVXI1fNVQZE3YQX-1Q1u-NXfbowlNy0nRSvt0lfA0YlQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"tipopago\": \"xxx\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/pago",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"pago"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pago",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIxIiwic3ViIjoib3NhbnRpIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJpYXQiOjE3MDAzODY3NDIsImV4cCI6MTcwMDM4NzA0Mn0.0cdbvTc2U7e0JwwtjmwaERGrpcPZFSh50Prxt964xENVXI1fNVQZE3YQX-1Q1u-NXfbowlNy0nRSvt0lfA0YlQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"tipopago\": \"para borrar\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/pago/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"pago",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pago",
 					"request": {
 						"method": "DELETE",
 						"header": [],

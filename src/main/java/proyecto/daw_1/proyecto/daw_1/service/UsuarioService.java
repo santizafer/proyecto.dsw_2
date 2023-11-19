@@ -2,9 +2,13 @@ package proyecto.daw_1.proyecto.daw_1.service;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
+import proyecto.daw_1.proyecto.daw_1.model.bd.Rol;
 import proyecto.daw_1.proyecto.daw_1.model.bd.Usuario;
 import proyecto.daw_1.proyecto.daw_1.repository.RolRepository;
 import proyecto.daw_1.proyecto.daw_1.repository.UsuarioRepository;
+
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Service;
 
 import java.util.*;
 
@@ -14,6 +18,9 @@ public class UsuarioService {
 
     private UsuarioRepository usuarioRepository;
     private RolRepository rolRepository;
+
+    private BCryptPasswordEncoder bCryptPasswordEncoder=
+            new BCryptPasswordEncoder();
 
     public Usuario findUserByEmail(String email){
         return usuarioRepository.findByEmailusuario(email);
@@ -28,6 +35,11 @@ public class UsuarioService {
     }
 
     public Usuario guardar(Usuario usuario){
+        usuario.setPassusuario(bCryptPasswordEncoder.encode(
+                usuario.getPassusuario()));
+        usuario.setEstadousuario(true);
+        Rol usuarioRol = rolRepository.findByNomrol("ADMIN");
+        usuario.setRoles(new HashSet<>(Arrays.asList(usuarioRol)));
         return usuarioRepository.save(usuario);
     }
 

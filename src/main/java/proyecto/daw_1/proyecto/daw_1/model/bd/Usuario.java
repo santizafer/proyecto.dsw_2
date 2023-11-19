@@ -22,8 +22,11 @@ public class Usuario {
     @Column(name="nomusuario")
     private String nomusuario;
 
-    @Column(name="apeusuario")
-    private String apeusuario;
+    @Column(name="nombresusuario")
+    private String nombresusuario;
+
+    @Column(name="apellidosusuario")
+    private String apellidosusuario;
 
     @Column(name="emailusuario")
     private String emailusuario;
@@ -37,9 +40,13 @@ public class Usuario {
     @Column(name="estadousuario")
     private Boolean estadousuario;
 
-    @ManyToOne()
-    @JoinColumn(name = "idrol")
-    private Rol rol;
+    @ManyToMany(
+            cascade = CascadeType.MERGE,
+            fetch = FetchType.EAGER )
+    @JoinTable(name = "usuario_rol", joinColumns =
+    @JoinColumn(name = "codusuario"),
+            inverseJoinColumns = @JoinColumn(name = "idrol"))
+    private Set<Rol> roles;
 
 
 
