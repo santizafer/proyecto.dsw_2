@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&amp;family=Pacifico&amp;family=Source+Sans+Pro:wght@300;400;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" th:href="@{/css/styles.css?t=1669763304031}">
+    <link rel="stylesheet" th:href="@{/css/forms.css?t=1669763303753}">
+    <link rel="icon" type="image/png" sizes="16x16" href="./../../images/favicon-16x16.png">
+    <title>Tu Callao - Picardía Sabor y Sazón | Tu Callao</title>
+</head>
+<body class="page-single">
+<div id="container">
+    <!-- HEADER -->
+    <div th:replace="~{fragments/header::header}">...</div>
+    <!-- HEADER -->
+    <div class="banner-top"><img src="../../images/banner-internas.jpg" alt="Chucuito"></div>
+    <main>
+        <h1>Isla El Frontón</h1>
+        <jsp:include page="MODULES/compartir.jsp" />
+        <p><strong>El Frontón es una pequeña isla ubicada en el Océano Pacífico, cerca de la costa de la ciudad de El Callao, en el Perú. Se le conoce también como Isla Callao.</strong></p>
+        <p>La Isla el Frontón es, como su nombre lo indica, una isla que se encuentra dentro de la jurisdicción del distrito y región del Callao; aquella isla es conocida además con el nombre de Isla Callao.</p>
+        <p>La Isla El Frontón ha sido, desde finales de la primera década del siglo XX, una prisión, elegida como el lugar de encarcelamiento de aquellos delincuentes más peligrosos capturados en el país. Esta isla, además, ha sido el lugar donde se tuvieron a importantes presos políticos. La cárcel que se encuentra en la Isla el Frontón, recibe el nombre de Penal San Juan Bautista.</p>
+        <p>La isla-cárcel, es históricamente conocida, por un terrible suceso que se viviera pocos años atrás, en 1985, cuando en el lugar se llevara a cabo un motín, encabezado por los terroristas, del grupo Sendero Luminoso.  Aquel primer motín se vio disuelto poco tiempo después, sin embargo a este sobrevino el motín del 13 de julio del mismo año, también concluido pocos días después y muchos otros que ocasionaron que para el año 1986, entre los días 18 y 19 de junio, los miembros de la Marina de Guerra del Perú, realizaran un bombardeo a la zona, consiguiendo finalmente la rendición de los reclusos y la reducción de la población de la isla a tan solo 28 sobrevivientes. Los testimonios posteriores advirtieron la posibilidad de ejecuciones extrajudiciales que acabaron con un mayor número de presos que el ataque para recuperar el dominio de la isla.</p>
+        <figure><img src="../images/isla-fronton/isla-fronton.jpg" alt="Isla El Frontón">
+            <figcaption>Isla El Frontón</figcaption>
+        </figure>
+        <p>En la actualidad, las visitas a la isla se encuentran deshabilitadas, así como su uso como carceleta, pese a los intentos de ciertos congresistas y autoridades para reabrirla. Pese a las prohibiciones en relación a la isla, aquella  puede ser observada y rodeada por las embarcaciones de empresas turísticas y particulares que realizan tours por las diferentes islas que se encuentran en el mar del Callao.</p>
+        <p>Fuente:
+            <cite>Fuente: Turismoi.pe</cite>
+        </p>
+        <div class="comments-form">
+            <h3>Déjanos tu comentario:</h3>
+            <form action="" name="comments">
+                <div class="col1">
+                    <div class="row-form row-inputs">
+                        <div class="tit">¿Qué impresión te dejó?</div>
+                        <label>
+                            <input type="radio" name="caritas" value="in-love" checked><img src="../images/in-love.png" alt="Feliz">
+                        </label>
+                        <label>
+                            <input type="radio" name="caritas" value="neutral"><img src="../images/neutral.png" alt="Neutral">
+                        </label>
+                        <label>
+                            <input type="radio" name="caritas" value="sad"><img src="../images/sad.png" alt="Triste">
+                        </label>
+                        <label>
+                            <input type="radio" name="caritas" value="angry"><img src="../images/angry.png" alt="molesto">
+                        </label>
+                        <label>
+                            <input type="radio" name="caritas" value="llanto"><img src="../images/llanto.png" alt="molesto">
+                        </label>
+                    </div>
+                    <div class="row-form">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="row-form">
+                        <input type="text" name="titulo" placeholder="Titulo del comentario">
+                    </div>
+                    <div class="row-form">
+                        <input type="text" name="nombre" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div class="row-form">
+                        <input type="text" name="email" placeholder="Ingresa tu email">
+                    </div>
+                    <div class="row-form">
+                        <input type="submit" value="Enviar Comentario">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="comments-comment">
+            <div class="comments-items-title">Comentarios:</div>
+            <div class="comment-items-content">
+                <div class="item">
+                    <div class="comment-title">Un lugar hermoso<img src="../images/in-love.png" alt="Feliz"></div>
+                    <div class="comment-message">Es un lugar hermoso y acogedor, sus casitas de color y su rica comida son los más destacable de este bello y rico puerto chalaco, y que decir de su gente, es muy calida y cariñosa, recomiendo totalmente este lugar para pasar un fin de semana en familia.</div>
+                    <div class="comment-contact">
+                        <div class="comment-name">Maria</div>
+                        <div class="comment-email">mariamer@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </main>
+    <!-- FOOTER -->
+    <div th:replace="~{fragments/footer::footer}">...</div>
+    <!-- FOOTER -->
+</div>
+</body>
+</html>

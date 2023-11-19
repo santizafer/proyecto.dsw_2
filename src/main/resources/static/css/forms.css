@@ -1,0 +1,81 @@
+.page-single main {margin-bottom: 100px}
+.page-single h1 {margin-bottom:35px}
+.row-form{padding-left: 100; margin-bottom:12px; }
+.row-form.center {text-align:center}
+.row-form input[type="text"],
+.row-form input[type="number"],
+.row-form input[type="email"], 
+.row-form input[type="date"], 
+.row-form input[type="time"],
+.row-form input,
+.row-form select, .row-form textarea{border: 1px solid #e56b94; padding:5px 10px; width:250px}
+.row-form input[type="time"] { width: 90px}
+.row-form input[type="number"] {width:70px}
+.row-form input[type="date"] {width:auto}
+.row-form label{float:left; width:200px; text-align:right; margin-right:20px; margin-top:4px}
+.row-form textarea {height:120px}
+input[type="submit"], input[type="reset"] {cursor:pointer; border:0; background-color:#111; padding:10px 25px; color:#fff; margin-right:20px; border-radius:8px; border:0; width:150px}
+input[type="submit"]:hover, input[type="reset"]:hover {background-color:#b53fad}
+.row-reserva {border:1px solid #e91e63; margin-bottom:25px }
+.row-reserva:hover {outline:5px solid #fffec8}
+.row-reserva .header {border-bottom:1px solid #e91e63; padding:12px 0; overflow:hidden}
+.row-reserva .header .buttons {float:right; margin:8px 20px 0 0;}
+.row-reserva .header a.btn.red {background-color: #e91e63}
+.row-reserva .header a.btn{background-color:#3f51b5; padding:5px 10px; color:#fff; margin-left:5px; border-radius:8px; text-decoration:none; font-size: 14px}
+.row-reserva .header a.btn:hover{background-color:#b53fad}
+.row-reserva .header .items{float: left;}
+.row-reserva .header .item{float: left; font-weight:bold; border-right:1px solid #ccc; padding: 8px 15px }
+.row-reserva .header .item:nth-child(1){min-width:120px}
+.row-reserva .header .item:nth-child(2){min-width:200px}
+.row-reserva .header .item:nth-child(3){min-width:115px}
+.row-reserva .header .item:last-child{border-right-width:0}
+.row-reserva .header .item span{color:#f39f9f; font-weight: normal}
+.row-reserva .body {padding:15px 10px; clear:both; position:relative}
+.row-reserva .body:after{content: ""; clear: both; display: table;}
+.row-reserva .body .col-1 {padding-left:150px; width:680px}
+.row-reserva .body .col-1 .titulo {font-weight:bold; font-size:16px; color:#e91e63; margin-bottom:14px; text-transform: uppercase;}
+.row-reserva .body .col-1 .item {margin-bottom:5px; overflow:hidden}
+body.reserva-detalle .row-reserva .body .col-1 .item .descripcion {padding-left:170px}
+body.reserva-detalle  .row-reserva .body .col-1 .item strong {float:left; width:150px; margin-right:20px; text-align: right;}
+.row-reserva .row-form label{width:150px; font-family: Source Sans Pro,sans-serif; margin-top: 2px}
+.row-reserva .row-form input[type="text"],
+.row-reserva .row-form input[type="number"],
+.row-reserva .row-form input[type="email"], 
+.row-reserva .row-form input[type="date"], 
+.row-reserva .row-form input[type="time"],
+.row-reserva .row-form select, .row-reserva .row-form textarea{border: 1px solid #e56b94; padding:3px 5px; width:220px; font-family: Source Sans Pro,sans-serif;}
+.row-reserva .row-form textarea {width:300px;} 
+.row-reserva .row-form input[type="time"] { width: 90px}
+.row-reserva .row-form input[type="number"] {width:70px}
+.row-reserva .item-img {width:130px; float:left}
+.row-reserva .body .item{margin-bottom:4px; }
+.row-reserva .col-2 {position:absolute; right:0; bottom:0; top:0; border-left:1px solid #e91e63; float:right; width:200px; padding:20px 20px 20px; margin:0}
+.row-reserva .col-2 .titulo {font-weight:bold; margin-bottom: 10px}
+.row-reserva .col-2 .item {margin-bottom:10px}
+.row-reserva .col-2 .item.total {border-top: 2px solid #e91e63; padding-top: 8px; text-align:right}
+.row-reserva .col-2 .item.total span {font-weight:bold}
+.row-reserva .col-2 select {width:100%; border: 1px solid #e56b94; padding:5px 10px;}
+.controlador-reservas{padding:25px 50px; margin: 0 80px}
+.fs-1 {border: 1px solid #edd1da; padding: 20px 30px 25px; margin-bottom:25px }
+.fs-1 legend{text-align:left; padding:15px; background: #e91e63; color: #fff; text-transform: uppercase; padding: 5px 10px; font-weight: bold; font-size: 12px; }
+.estadovalor{font-size:11px; text-transform:uppercase; color:#fff !important; background-color:green; padding:2px 4px; border-radius: 3px}
+
+.reservado{background-color:#ff8000}
+.ejecucion{background-color: green}
+.cancelado{background-color:red}
+.finalizado{background-color:#8080c0}
+
+.form-login {width: 200px; margin:170px auto 200px; font-size: 13px; text-align:center }
+.form-login img {margin:25px auto; width:80px}
+.form-login .row-form input[type="text"], .form-login .row-form input[type="password"] {width:100%; font-family: Source Sans Pro,sans-serif}
+.form-login .row-form input[type="submit"] {display:block; font-size:12px; width:100px; text-transform:uppercase; padding-top: 7px; padding-bottom:7px; margin:25px auto}
+.form-login label {width: 100px; padding:6px 10px; text-align:right; font-family: Source Sans Pro,sans-serif }
+
+.filtrar-por{font-weight:bold; float:left; margin-top:4px}
+.leyenda{ overflow:hidden; padding:15px; background-color: #e91e63; margin-bottom:15px; color:#fff;}
+.leyenda ul {list-style:none; margin: 0 0 20px 0; padding:0}
+.leyenda ul li{float:left; padding:5px;  margin-left: 12px; text-transform:uppercase; font-size:12px; cursor:pointer; border: 1px solid transparent}
+.leyenda ul li:hover {border: 1px solid #fff}
+.leyenda ul li span{display:inline-block; width:16px; height: 8px; border:1px solid #fff; margin-right:4px}
+
+

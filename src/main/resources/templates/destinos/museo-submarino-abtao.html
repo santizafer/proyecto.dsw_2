@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&amp;family=Pacifico&amp;family=Source+Sans+Pro:wght@300;400;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" th:href="@{/css/styles.css?t=1669763304031}">
+    <link rel="stylesheet" th:href="@{/css/forms.css?t=1669763303753}">
+    <link rel="icon" type="image/png" sizes="16x16" href="./../../images/favicon-16x16.png">
+    <title>Tu Callao - Picardía Sabor y Sazón | Tu Callao</title>
+</head>
+<body class="page-single">
+<div id="container">
+    <!-- HEADER -->
+    <div th:replace="~{fragments/header::header}">...</div>
+    <!-- HEADER -->
+    <div class="banner-top"><img src="../../images/banner-internas.jpg" alt="Chucuito"></div>
+    <main>
+        <h1>Museo de Sitio Naval Submarino Abtao</h1>
+        <jsp:include page="MODULES/compartir.jsp" />
+        <p><strong>Submarino anclado tipo Sierra que se construyó en la década de 1950 y ahora funciona como museo.</strong></p>
+        <p>El afirmado del Pabellón Nacional fue el 1ro de Marzo de 1954 y luego de un periodo de entrenamiento en los Estados Unidos navegó al Callao, incorporándose a la Armada Peruana el 20 de Julio de 1954. Desde entonces cumplió importantes misiones en la Flotilla de Submarinos.</p>
+        <p>El 29 de Marzo de 1957 se le cambió de nombre a BAP “ABTAO” en homenaje al Combate Naval de Abtao del 7 de Febrero de 1866 frente a la costa de Abtao, Chile, librado entre la escuadra española y la vencedora escuadra aliada peruano-chilena, al mando del Capitán de Navío Manuel Villar distinguido miembro de la Armada del Perú.</p>
+        <p>El 29 de Marzo de 1957 se le cambió de nombre a BAP “ABTAO” en homenaje al Combate Naval de Abtao del 7 de Febrero de 1866 frente a la costa de Abtao, Chile, librado entre la escuadra española y la vencedora escuadra aliada peruano-chilena, al mando del Capitán de Navío Manuel Villar distinguido miembro de la Armada del Perú.</p>
+        <figure><img src="../images/submarino-abtao/submarino-abtao.jpg" alt="Submarino Abtao">
+            <figcaption>Submarino Abtao</figcaption>
+        </figure>
+        <p>Durante sus 48 años de servicio totalizó 5003 inmersiones. Submarinistas de Argentina, Brasil, Colombia y Venezuela fueron entrenados a bordo, sumando centenares los submarinistas peruanos que orgullosos lo tripularon.</p>
+        <p>Hace tan sólo unos años, el submarino “ABTAO” surcaba ágil las profundas aguas del mar peruano, el Mar de Grau, y era una importante arma disuasiva de nuestro país. Sin embargo, los avances tecnológicos demandaban renovación y la nave tuvo que ser dada de baja tras casi 50 años de servicio.</p>
+        <p>La Asociación de Oficiales Submarinistas del Perú, presidida entonces por el Vicealmirante Gustavo Barragán Schenone, hizo realidad el convertirlo en Museo, recibiendo el aporte económico de la Municipalidad del Callao.</p>
+        <p>Desde el 28 de enero del 2004, fecha en que abrió sus escotillas al público, son más de UN MILLÓN los adultos y niños que lo han visitado. Sólo conocían submarinos a través de las películas, y ahora pudieron visitar uno real y vivir una experiencia inolvidable.</p>
+        <figure><img src="../images/submarino-abtao/submarino-abtao-2.jpg" alt="Submarino Abtao">
+            <figcaption>Submarino Abtao</figcaption>
+        </figure>
+        <p>El BAP “ABTAO” no participó en acciones de guerra efectivas, sin embargo, si cumplió un rol importante durante el conflicto de "Falsa Paquisha" en el año 1981, constituyéndose siempre en un importante factor disuasivo gracias a su presencia en el mar peruano, el Mar de Grau.</p>
+        <p>Este submarino, convertido ahora en una máquina de exposición, patrulló infinidad de veces el Océano Pacífico, y estuvo listo, en todo momento, para la guerra. Ahora, convertido en museo, recibe diariamente gran cantidad de visitantes, mayoritariamente escolares de todo el Perú.</p>
+        <p>Fuente:
+            <cite>Fuente: https://www.museosubmarinoabtao.com/</cite>
+        </p>
+        <div class="comments-form">
+            <h3>Déjanos tu comentario:</h3>
+            <form action="" name="comments">
+                <div class="col1">
+                    <div class="row-form row-inputs">
+                        <div class="tit">¿Qué impresión te dejó?</div>
+                        <label>
+                            <input type="radio" name="caritas" value="in-love" checked><img src="../images/in-love.png" alt="Feliz">
+                        </label>
+                        <label>
+                            <input type="radio" name="caritas" value="neutral"><img src="../images/neutral.png" alt="Neutral">
+                        </label>
+                        <label>
+                            <input type="radio" name="caritas" value="sad"><img src="../images/sad.png" alt="Triste">
+                        </label>
+                        <label>
+                            <input type="radio" name="caritas" value="angry"><img src="../images/angry.png" alt="molesto">
+                        </label>
+                        <label>
+                            <input type="radio" name="caritas" value="llanto"><img src="../images/llanto.png" alt="molesto">
+                        </label>
+                    </div>
+                    <div class="row-form">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="row-form">
+                        <input type="text" name="titulo" placeholder="Titulo del comentario">
+                    </div>
+                    <div class="row-form">
+                        <input type="text" name="nombre" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div class="row-form">
+                        <input type="text" name="email" placeholder="Ingresa tu email">
+                    </div>
+                    <div class="row-form">
+                        <input type="submit" value="Enviar Comentario">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="comments-comment">
+            <div class="comments-items-title">Comentarios:</div>
+            <div class="comment-items-content">
+                <div class="item">
+                    <div class="comment-title">Un lugar hermoso<img src="../images/in-love.png" alt="Feliz"></div>
+                    <div class="comment-message">Es un lugar hermoso y acogedor, sus casitas de color y su rica comida son los más destacable de este bello y rico puerto chalaco, y que decir de su gente, es muy calida y cariñosa, recomiendo totalmente este lugar para pasar un fin de semana en familia.</div>
+                    <div class="comment-contact">
+                        <div class="comment-name">Maria</div>
+                        <div class="comment-email">mariamer@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </main>
+    <!-- FOOTER -->
+    <div th:replace="~{fragments/footer::footer}">...</div>
+    <!-- FOOTER -->
+</div>
+</body>
+</html>

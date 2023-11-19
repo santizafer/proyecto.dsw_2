@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&amp;family=Pacifico&amp;family=Source+Sans+Pro:wght@300;400;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" th:href="@{/css/styles.css?t=1669763304031}">
+    <link rel="stylesheet" th:href="@{/css/forms.css?t=1669763303753}">
+    <link rel="icon" type="image/png" sizes="16x16" href="./../../images/favicon-16x16.png">
+    <title>Tu Callao - Picardía Sabor y Sazón | Tu Callao</title>
+</head>
+<body class="page-single">
+<div id="container">
+    <!-- HEADER -->
+    <div th:replace="~{fragments/header::header}">...</div>
+    <!-- HEADER -->
+    <div class="banner-top"><img src="../../images/banner-internas.jpg" alt="Chucuito"></div>
+    <main>
+        <h1>Galería de Fotos</h1>
+        <div id="compartir"><a class="fb" href="" target="_blank"><i class="fa-brands fa-facebook"></i></a><a class="tw" href="" target="_blank"><i class="fa-brands fa-twitter"></i></a><a class="wa" href="" target="_blank"><i class="fa-brands fa-whatsapp"></i></a><a class="in" href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+        <p><strong>Galería de imágenes:</strong></p>
+        <div id="galeria">
+            <div class="item"><img src="../images/aniversario-callao/aniversario-callao.jpg" alt="Aniversario del Callao"></div>
+            <div class="item"><img src="../images/chucuito/balneario-chucuito.jpg" alt="Balneario de Chucuito"></div>
+            <div class="item"><img src="../images/huaca-paraiso/huaca-paraiso.jpg" alt="Huaca Paraíso"></div>
+            <div class="item"><img src="../images/huaca-paraiso/huaca-paraiso-2.jpg" alt="Huaca Paraíso"></div>
+            <div class="item"><img src="../images/humedales-ventanilla/humedales-de-ventanilla.jpg" alt="Humedales de Ventanilla"></div>
+            <div class="item"><img src="../images/humedales-ventanilla/humedales-de-ventanilla-2.jpg" alt="Humedales de Ventanilla"></div>
+            <div class="item"><img src="../images/isla-cavinzas/isla-cavinzas.jpg" alt="Isla Cavinzas"></div>
+            <div class="item"><img src="../images/isla-cavinzas/isla-cavinzas-pinguino.jpg" alt="Isla Cavinzas"></div>
+            <div class="item"><img src="../images/isla-fronton/isla-fronton.jpg" alt="Isla Frontón"></div>
+            <div class="item"><img src="../images/la-punta/la-punta.jpg" alt="La Punta"></div>
+            <div class="item"><img src="../images/la-punta/la-punta-dia.jpg" alt="La Punta"></div>
+            <div class="item"><img src="../images/monumental/monumental.jpg" alt="Monumental Callao"></div>
+            <div class="item"><img src="../images/monumental/monumental-2.jpg" alt="Monumental Callao"></div>
+            <div class="item"><img src="../images/museo-naval/museo-naval.jpg" alt="Museo Naval del Callao"></div>
+            <div class="item"><img src="../images/museo-naval/museo-naval-2.jpg" alt="Museo Naval del Callao"></div>
+            <div class="item"><img src="../images/plaza-matriz/plaza-matriz.jpg" alt="Plaza Matriz"></div>
+        </div>        
+    </main>
+    <!-- FOOTER -->
+    <div th:replace="~{fragments/footer::footer}">...</div>
+    <!-- FOOTER -->
+</div>
+</body>
+</html>

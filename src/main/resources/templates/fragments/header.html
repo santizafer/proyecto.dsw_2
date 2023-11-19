@@ -1,0 +1,64 @@
+<header id="header" th:fragment="header" xmlns:th="http://www.w3.org/1999/xhtml">
+  <div id="admin" class="admin">
+    <span id="user"></span>
+    <a id="panel"></a>
+    <a href="/login" id="session">Iniciar sessión &nbsp;<i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+  </div>
+
+  <div class="clearfix">
+    <div class="logo"><a href="/">
+
+      <span th:if="${activepage == 'index'}">
+        <img src="images/logo.png" alt="Logo">
+      </span>
+      <span th:if="${activepage != 'index'}">
+        <img src="../images/logo.png" alt="Logo">
+      </span>
+
+
+    </a></div>
+    <div class="social-buttons">
+      <ul>
+        <li><a href="https://www.facebook.com/cibertecoficial/"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/CiberTweets"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/cibertecoficial/"><i class="fa-brands fa-instagram"></i></a></li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="clearfix">
+
+    <nav>
+      <ul>
+        <li><a href="/">INICIO</a></li>
+        <li><a href="atractivos-turisticos">ATRACTIVOS  TURÍSTICOS &nbsp;<i class="fa-solid fa-caret-right"></i></a>
+          <ul>
+            <li><a href="/destinos/fortaleza-real-felipe">Fortaleza del Real Felipe</a></li>
+            <li><a href="/destinos/museo-naval-peru">Museo Naval del Perú</a></li>
+            <li><a href="/destinos/zona-monumental-callao">Zona Monumental del Callao</a></li>
+            <li><a href="/destinos/huaca-el-paraiso">Huaca el Paraíso</a></li>
+            <li><a href="/destinos/museo-submarino-abtao">Museo Submarino Abtao</a></li>
+            <li><a href="/destinos/humedales-de-ventanilla">Humedales de Ventanilla</a></li>
+            <li><a href="/destinos/plaza-matriz">Plaza Matriz del Callao</a></li>
+            <li><a href="/destinos/isla-el-fronton">Isla el Frontón</a></li>
+            <li><a href="/destinos/islas-cavinzas">Islas Cavinzas</a></li>
+            <li><a href="/destinos/balneario-chucuito">Balneario de Chucuito</a></li>
+          </ul>
+        </li>
+        <li><a href="/gastronomia">GASTRONOMÍA</a></li>
+        <li><a href="/galeria">FOTOS</a></li>
+        <li><a href="/videos">VIDEOS</a></li>
+        <li><a href="/quienes-somos">QUIENES SOMOS</a></li>
+        <li><a href="/contactenos">CONTÁCTENOS</a></li>
+
+      </ul>
+    </nav>
+
+    <div class="search-box">
+      <a class="reserva-aqui" href="ControladorDestinos">¡RESERVAR AQUÍ!</a>
+      <!--input type="text" placeholder="Buscar"-->
+    </div>
+  </div>
+</header>
+
+<div id="container">

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&amp;family=Pacifico&amp;family=Source+Sans+Pro:wght@300;400;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" th:href="@{/css/styles.css?t=1669763304031}">
+    <link rel="stylesheet" th:href="@{/css/forms.css?t=1669763303753}">
+    <link rel="icon" type="image/png" sizes="16x16" href="./../images/favicon-16x16.png">
+    <title>Tu Callao - Picardía Sabor y Sazón | Tu Callao</title>
+</head>
+<body class="page-single page-admin">
+<div id="container">
+    <!-- HEADER -->
+    <div th:replace="~{fragments/header::header}">...</div>
+    <!-- HEADER -->
+
+    <main>
+
+        <div th:replace="~{/fragments/admin/headeradmin::headeradmin}">...</div>
+
+        <div class="clearfix paneladmin">
+
+            <nav class="menu-admin" th:replace="~{/fragments/admin/menuadmin::menu2}"></nav>
+            <div class="content-admin">
+                <div class="title">Actualizar reserva</div>
+                <form th:action="@{/guardarreserva}" th:object="${reserva}" enctype="multipart/form-data" method="post">
+
+                    <div class="row-form">
+                        <input type="hidden" name="codreserva">
+                    </div>
+
+                    <div class="row-form">
+                        <label for="usuario" class="text-secondary">Usuario:</label>
+                        <select id="usuario" th:field="*{usuario.codusuario}" class="form-control" required>
+                            <option selected value="0">Seleccione</option>
+                            <option th:each="r : ${listausuarios}" th:value="${r.codusuario}" th:text="${r.nomusuario}"></option>
+                        </select>
+                    </div>
+
+                    <div class="row-form">
+                        <label for="fechareserva" class="text-secondary">Fecha reserva:</label>
+                        <input type="date" th:field="*{fechareserva}" class="form-control" id="fechareserva" placeholder="Fecha reserva" required>
+                    </div>
+                    <div class="row-form">
+                        <label for="horareserva" class="text-secondary">Hora reserva</label>
+                        <input type="time" th:field="*{horareserva}" class="form-control" id="horareserva" placeholder="Hora reserva" required>
+                    </div>
+                    <div class="row-form">
+                        <label for="personas" class="text-secondary">Número de personas:</label>
+                        <input type="number" th:field="*{numeropersonasreserva}" class="form-control" id="personas" min="1" max="15" placeholder="N°" required>
+                    </div>
+                    <div class="row-form">
+                        <label for="info" class="text-secondary">Información adicional:</label>
+                        <textarea th:field="*{infreserva}" class="form-control" id="info" placeholder="Agregar información (opcional)"></textarea>
+                    </div>
+
+                    <div class="row-form">
+                        <label for="destino" class="text-secondary">Destino:</label>
+                        <select id="destino" th:field="*{destino.coddestino}" class="form-control" required>
+                            <option value="">Seleccione</option>
+                            <option th:each="r : ${listadestinos}" th:value="${r.coddestino}" th:text="${r.nomdestino}"></option>
+                        </select>
+                    </div>
+
+                    <div class="row-form">
+                        <label for="pago" class="text-secondary">Medio de pago:</label>
+                        <select id="pago" th:field="*{pago.codpago}" class="form-control" required>
+                            <option value="">Seleccione</option>
+                            <option th:each="r : ${listamediopago}" th:value="${r.codpago}" th:text="${r.tipopago}"></option>
+                        </select>
+                    </div>
+
+                    <div class="row-form">
+                        <label for="estado" class="text-secondary">Estado:</label>
+                        <select id="estado" th:field="*{estado.codestado}" class="form-control" required>
+                            <option value="">Seleccione</option>
+                            <option th:each="r : ${listaestados}" th:value="${r.codestado}" th:text="${r.nomestado}"></option>
+                        </select>
+                    </div>
+
+                    <div class="row-form">
+                        <label class="text-secondary"></label>
+                        <button type="submit" class="btn btn-info mt-4">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth()+1; //January is 0!
+        var yyyy = today.getFullYear();
+         if(dd<10){
+                dd='0'+dd
+            }
+            if(mm<10){
+                mm='0'+mm
+            }
+        today = yyyy+'-'+mm+'-'+dd;
+        document.querySelector("#fechareserva").setAttribute("min", today);
+
+    </script>
+
+    <!-- FOOTER -->
+    <div th:replace="~{fragments/footer::footer}">...</div>
+    <!-- FOOTER -->
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&amp;family=Pacifico&amp;family=Source+Sans+Pro:wght@300;400;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" th:href="@{/css/styles.css?t=1669763304031}">
+    <link rel="stylesheet" th:href="@{/css/forms.css?t=1669763303753}">
+    <link rel="icon" type="image/png" sizes="16x16" href="./../images/favicon-16x16.png">
+    <title>Tu Callao - Picardía Sabor y Sazón | Tu Callao</title>
+</head>
+<body class="page-single page-admin">
+<div id="container">
+    <!-- HEADER -->
+    <div th:replace="~{fragments/header::header}">...</div>
+    <!-- HEADER -->
+
+    <main>
+
+        <div th:replace="~{/fragments/admin/headeradmin::headeradmin}">...</div>
+
+        <div class="clearfix paneladmin">
+
+            <nav class="menu-admin" th:replace="~{/fragments/admin/menuadmin::menu2}"></nav>
+            <div class="content-admin">
+                <div class="title">Listado destinos</div>
+
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Actualizar</th>
+                        <th scope="col">Eliminar</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="destino:${listadestinos}">
+                        <td th:text="${destino.coddestino}"></td>
+                        <td th:text="${destino.nomdestino}"></td>
+                        <td th:text="${destino.desdestino}"></td>
+                        <td th:text="${destino.predestino}"></td>
+                        <td><a th:href="@{/actualizardestino/{id}(id=${destino.coddestino})}"><i class="fa-regular fa-pen-to-square"></i></a></td>
+                        <td><a th:href="@{/eliminardestino/{id}(id=${destino.coddestino})}"><i class="fa-regular fa-trash-can"></i></a></td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <div th:replace="~{fragments/footer::footer}">...</div>
+    <!-- FOOTER -->
+</div>
+</body>
+</html>

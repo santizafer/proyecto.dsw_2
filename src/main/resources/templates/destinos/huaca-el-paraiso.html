@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&amp;family=Pacifico&amp;family=Source+Sans+Pro:wght@300;400;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" th:href="@{/css/styles.css?t=1669763304031}">
+    <link rel="stylesheet" th:href="@{/css/forms.css?t=1669763303753}">
+    <link rel="icon" type="image/png" sizes="16x16" href="./../../images/favicon-16x16.png">
+    <title>Tu Callao - Picardía Sabor y Sazón | Tu Callao</title>
+</head>
+<body class="page-single">
+<div id="container">
+    <!-- HEADER -->
+    <div th:replace="~{fragments/header::header}">...</div>
+    <!-- HEADER -->
+    <div class="banner-top"><img src="../../images/banner-internas.jpg" alt="Chucuito"></div>
+    <main>
+        <h1>Huaca el Paraíso</h1>
+        <jsp:include page="MODULES/compartir.jsp" />
+        <p><strong>El Paraíso es el nombre moderno de un complejo arqueológico monumental del Periodo Arcaico Tardío (3500-1800 a. C.)</strong></p>
+        <p>También conocido como Chuquitanta. Está situado en el valle del río Chillón, en la costa central de Perú, a varios kilómetros al norte del centro de Lima, capital del Perú y a dos km del Océano Pacífico. Pertenece al Distrito de San Martín de Porres, colindando con los límites de la Provincia Constitucional del Callao.</p>
+        <p>Forma parte del Complejo Arqueológico del Valle del Chillón, al que también pertenecen la Pampa de Los Perros y la Pampa Culebras.</p>
+        <figure><img src="../images/huaca-paraiso/huaca-paraiso.jpg" alt="Huaca El Paraiso">
+            <figcaption>Huaca El Paraiso</figcaption>
+        </figure>
+        <h2>Ubicación geográfica</h2>
+        <p>El Paraíso se encuentra situado en Lima Norte, entre los cerros de la zona de Chuquitanta, en la margen izquierda del río Chillón y cerca de su desembocadura en el Océano Pacífico. Los restos arqueológico se alzan sobre la terraza aluvial de dicho río, que está rodeado de más de 90 hectáreas de tierras de cultivo y 150 hectáreas de tierras bajas capaces de sostener el riego apoyado de la agricultura.</p>
+        <p>El Paraíso es uno de los mayores asentamientos del período Arcaico Tardío (llamado también Precerámico Tardío), que abarca más de 58 hectáreas de tierra. Es uno de los seis sitios conocidos de dicho periodo en el valle de Ancón-Chillón, donde además destacan el sitio de Pampa de los Perros y Buena Vista. Otros centros importantes de este período incluyen Áspero y Caral, en la costa norcentral en el valle de Supe. Considerables centros se encuentran en diferentes zonas ecológicas, desde la costa hasta las zonas del interior. Stanish llegó a la conclusión de que éste era un momento en que los asentamientos se distribuyeron ampliamente, situada a varias distancias de la costa que permiten el acceso a una variedad de recursos marinos y agrícolas.</p>
+        <figure><img src="../images/huaca-paraiso/huaca-paraiso-2.jpg" alt="Huaca El Paraiso">
+            <figcaption>Huaca El Paraiso</figcaption>
+        </figure>
+        <h2>Cronología</h2>
+        <p>Se ha dado a conocer 16 muestras procesadas por datación por radiocarbono, que ubican al sitio en una antigüedad entre el 2.300 a.C. y el 1.400 a.C. es decir, en el final del período Arcaico Tardío. Es contemporáneo con el célebre Templo de las Manos Cruzadas de Kotosh, en Huánuco, y con la fase final de Caral.</p>
+        <h2>Investigaciones</h2>
+        <p>El sitio fue dado a conocer en 1950 por Louis Stumer, al que nombró Chuquitanta, nombre de una hacienda cercana. En 1964, Thomas C. Patterson y Edward P. Lanning consideran por primera al sitio como precerámico, logrando identificar unas nueve estructuras. Pero recién en 1965 Frederic Engel llevó a cabo exploraciones y excavaciones en el sitio, al que llamó El Paraíso, por ser el nombre oficial que era usado por el Instituto Nacional de Cultura. Engel identificó unos 8 edificios monticulares esparcidos en un área extensa, por lo que definió al lugar como un gran complejo arquitectónico, uno de los más grandes del Perú antiguo. Engel restauró la Unidad I, donde además centró sus excavaciones. Sobre la base de los restos textiles, la falta de cerámica y cuatro dataciones radiocarbónicas provenientes de la Unidad I se confirmó la cronología del sitio como precerámico tardío. En 1982 Jeffrey Quilter comienza la primera de varias temporadas de campo de un estudio multidisciplinar, El Proyecto del Bajo Valle del Chillón, que tuvo el propósito de establecer una cronología y una mejor comprensión de la arquitectura y la economía de subsistencia.</p>
+        <p>Fuente:
+            <cite>Fuente: https://es.wikipedia.org/wiki/Huaca_El_Para%C3%ADso</cite>
+        </p>
+        <div class="comments-form">
+            <h3>Déjanos tu comentario:</h3>
+            <form action="" name="comments">
+                <div class="col1">
+                    <div class="row-form row-inputs">
+                        <div class="tit">¿Qué impresión te dejó?</div>
+                        <label>
+                            <input type="radio" name="caritas" value="in-love" checked><img src="../images/in-love.png" alt="Feliz">
+                        </label>
+                        <label>
+                            <input type="radio" name="caritas" value="neutral"><img src="../images/neutral.png" alt="Neutral">
+                        </label>
+                        <label>
+                            <input type="radio" name="caritas" value="sad"><img src="../images/sad.png" alt="Triste">
+                        </label>
+                        <label>
+                            <input type="radio" name="caritas" value="angry"><img src="../images/angry.png" alt="molesto">
+                        </label>
+                        <label>
+                            <input type="radio" name="caritas" value="llanto"><img src="../images/llanto.png" alt="molesto">
+                        </label>
+                    </div>
+                    <div class="row-form">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="row-form">
+                        <input type="text" name="titulo" placeholder="Titulo del comentario">
+                    </div>
+                    <div class="row-form">
+                        <input type="text" name="nombre" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div class="row-form">
+                        <input type="text" name="email" placeholder="Ingresa tu email">
+                    </div>
+                    <div class="row-form">
+                        <input type="submit" value="Enviar Comentario">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="comments-comment">
+            <div class="comments-items-title">Comentarios:</div>
+            <div class="comment-items-content">
+                <div class="item">
+                    <div class="comment-title">Un lugar hermoso<img src="../images/in-love.png" alt="Feliz"></div>
+                    <div class="comment-message">Es un lugar hermoso y acogedor, sus casitas de color y su rica comida son los más destacable de este bello y rico puerto chalaco, y que decir de su gente, es muy calida y cariñosa, recomiendo totalmente este lugar para pasar un fin de semana en familia.</div>
+                    <div class="comment-contact">
+                        <div class="comment-name">Maria</div>
+                        <div class="comment-email">mariamer@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <div th:replace="~{fragments/footer::footer}">...</div>
+    <!-- FOOTER -->
+</div>
+</body>
+</html>

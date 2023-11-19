@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&amp;family=Pacifico&amp;family=Source+Sans+Pro:wght@300;400;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" th:href="@{/css/styles.css?t=1669763304031}">
+    <link rel="stylesheet" th:href="@{/css/forms.css?t=1669763303753}">
+    <link rel="icon" type="image/png" sizes="16x16" href="./../../images/favicon-16x16.png">
+    <title>Tu Callao - Picardía Sabor y Sazón | Tu Callao</title>
+</head>
+<body class="page-single">
+<div id="container">
+    <!-- HEADER -->
+    <div th:replace="~{fragments/header::header}">...</div>
+    <!-- HEADER -->
+    <div class="banner-top"><img src="../../images/banner-internas.jpg" alt="Chucuito"></div>
+    <main>
+        <h1>Humedales de Ventanilla</h1>
+        <jsp:include page="MODULES/compartir.jsp" />
+        <p><strong>El Área de conservación regional Humedales de Ventanilla es un área protegida en el Perú.</strong></p>
+        <p>El Área de Conservación Regional (ACR) “Humedales de Ventanilla” es alimentada por el sistema hídrico del Río Chillón, por las aguas superficiales de las pozas de oxidación de Sedapal y por las filtraciones de agua de los asentamientos humanos y otras poblaciones aledañas al humedal.</p>
+        <p>Los Humedales de Ventanilla también están influenciados por el sistema marino, especialmente en la zona noroeste. Esto hace que el espacio del ACR tenga un comportamiento de albúfera, es decir, que sus aguas sean ligeramente salobres aunque estén separadas del mar.</p>
+        <figure><img src="../images/humedales-ventanilla/humedales-de-ventanilla.jpg" alt="Humedales de Ventanilla">
+            <figcaption>Humedales de Ventanilla</figcaption>
+        </figure>
+        <p>El sistema hídrico del interior del ACR, es propicio para el crecimiento de la totora, el junco y el carrizo. En total, existen 27 especies de plantas nativas, quienes cumplen con la función de filtrar y depurar el agua del humedal.</p>
+        <p>La flora, además, ofrece protección y alimento a diversas especies de la fauna, principalmente, a las aves, quienes buscan refugio en ella porque pueden utilizarla para construir sus nidos.</p>
+        <p>Se han registrado 126 especies de aves, entre residentes y migratorias andinas, locales, boreales y australes.</p>
+        <p>Entre ellas, se encuentran aves rapaces, como el gavilán acanelado y el cernícalo americano; aves playeras, como la cigüeñuela y el chorlo gritón; y aves paseriformes, como el sietecolores, junquero y turtupilin.</p>
+        <figure><img src="../images/humedales-ventanilla/humedales-de-ventanilla-2.jpg" alt="Humedales de Ventanilla">
+            <figcaption>Humedales de Ventanilla</figcaption>
+        </figure>
+        <p>Además, esta área natural protegida es el hogar de 5 especies de reptiles, entre ellos, el gecko (Phyllodactylus sentosus) y la lagartija (Stenocercus modestus), ambas especies endémicas de Lima y en peligro de extinción.</p>
+        <p>Fuente:
+            <cite>https://www.gob.pe/15426-area-de-conservacion-regional-humedales-de-ventanilla-biodiversidad</cite>
+        </p>
+        <div class="comments-form">
+            <h3>Déjanos tu comentario:</h3>
+            <form action="" name="comments">
+                <div class="col1">
+                    <div class="row-form row-inputs">
+                        <div class="tit">¿Qué impresión te dejó?</div>
+                        <label>
+                            <input type="radio" name="caritas" value="in-love" checked><img src="../images/in-love.png" alt="Feliz">
+                        </label>
+                        <label>
+                            <input type="radio" name="caritas" value="neutral"><img src="../images/neutral.png" alt="Neutral">
+                        </label>
+                        <label>
+                            <input type="radio" name="caritas" value="sad"><img src="../images/sad.png" alt="Triste">
+                        </label>
+                        <label>
+                            <input type="radio" name="caritas" value="angry"><img src="../images/angry.png" alt="molesto">
+                        </label>
+                        <label>
+                            <input type="radio" name="caritas" value="llanto"><img src="../images/llanto.png" alt="molesto">
+                        </label>
+                    </div>
+                    <div class="row-form">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="row-form">
+                        <input type="text" name="titulo" placeholder="Titulo del comentario">
+                    </div>
+                    <div class="row-form">
+                        <input type="text" name="nombre" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div class="row-form">
+                        <input type="text" name="email" placeholder="Ingresa tu email">
+                    </div>
+                    <div class="row-form">
+                        <input type="submit" value="Enviar Comentario">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="comments-comment">
+            <div class="comments-items-title">Comentarios:</div>
+            <div class="comment-items-content">
+                <div class="item">
+                    <div class="comment-title">Un lugar hermoso<img src="../images/in-love.png" alt="Feliz"></div>
+                    <div class="comment-message">Es un lugar hermoso y acogedor, sus casitas de color y su rica comida son los más destacable de este bello y rico puerto chalaco, y que decir de su gente, es muy calida y cariñosa, recomiendo totalmente este lugar para pasar un fin de semana en familia.</div>
+                    <div class="comment-contact">
+                        <div class="comment-name">Maria</div>
+                        <div class="comment-email">mariamer@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <div th:replace="~{fragments/footer::footer}">...</div>
+    <!-- FOOTER -->
+</div>
+</body>
+</html>

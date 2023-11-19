@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&amp;family=Pacifico&amp;family=Source+Sans+Pro:wght@300;400;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" th:href="@{/css/styles.css?t=1669763304031}">
+    <link rel="stylesheet" th:href="@{/css/forms.css?t=1669763303753}">
+    <link rel="icon" type="image/png" sizes="16x16" href="./../../../images/favicon-16x16.png">
+    <title>Tu Callao - Picardía Sabor y Sazón | Tu Callao</title>
+</head>
+<body class="page-single">
+<div id="container">
+    <!-- HEADER -->
+    <div th:replace="~{fragments/header::header}">...</div>
+    <!-- HEADER -->
+    <div class="banner-top"><img src="../../../images/banner-internas.jpg" alt="Chucuito"></div>
+    <main>
+        <h1>Contáctenos</h1>
+        <div class="cnt-form">
+            <div class="col-1">
+                <p>Si quieres información sobre cualquiera de nuestros destinos o estás interesado en nuestros eventos, rellena el formulario y nos pondremos en contacto contigo lo antes posible.</p>
+                <p><strong>Sede Central y oficina: Av. Oscar Benavides (Ex. Av. Colonial) 288 - Callao</strong></p>
+                <p><i class="fa-solid fa-phone"></i>&nbsp; (511) 420-2206</p>
+                <p><i class="fa-brands fa-whatsapp"></i>&nbsp; 998-008-015</p>
+            </div>
+            <div class="col-2">
+                <form id="basic-form" action="contact_form.php" method="post">
+                    <div class="row-form">
+                        <h3>Formulario de contacto</h3>
+                    </div>
+                    <div class="row-form">
+                        <input type="text" name="visitor_name" placeholder="nombre">
+                    </div>
+                    <div class="row-form">
+                        <input type="email" name="visitor_email" placeholder="email">
+                    </div>
+                    <div class="row-form">
+                        <input type="text" name="email_title" placeholder="asunto">
+                    </div>
+                    <div class="row-form">
+                        <textarea name="visitor_message" cols="30" rows="10" placeholder="escribe tu mensaje"></textarea>
+                    </div>
+                    <div class="row-form">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </div>        
+    </main>
+    <!-- FOOTER -->
+    <div th:replace="~{fragments/footer::footer}">...</div>
+    <!-- FOOTER -->
+</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&amp;family=Pacifico&amp;family=Source+Sans+Pro:wght@300;400;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" th:href="@{/css/styles.css?t=1669763304031}">
+    <link rel="stylesheet" th:href="@{/css/forms.css?t=1669763303753}">
+    <link rel="icon" type="image/png" sizes="16x16" href="./../images/favicon-16x16.png">
+    <title>Tu Callao - Picardía Sabor y Sazón | Tu Callao</title>
+</head>
+<body class="page-single page-admin">
+<div id="container">
+    <!-- HEADER -->
+    <div th:replace="~{fragments/header::header}">...</div>
+    <!-- HEADER -->
+
+    <main>
+
+        <div th:replace="~{/fragments/admin/headeradmin::headeradmin}">...</div>
+
+        <div class="clearfix paneladmin">
+
+            <nav class="menu-admin" th:replace="~{/fragments/admin/menuadmin::menu2}"></nav>
+            <div class="content-admin">
+                <div class="title">Crear usuario</div>
+                <form th:action="@{/guardarusuario}" th:object="${usuario}" enctype="multipart/form-data" method="post">
+                    <input type="hidden" name="estadousuario" id="estadousuario" value="true">
+                    <div class="row-form">
+                        <label for="nombre" class="text-secondary">Nombre:</label>
+                        <input type="text" th:field="*{nomusuario}" class="form-control" id="nombre" placeholder="Nombre de usuario" required>
+                    </div>
+                    <div class="row-form">
+                        <label for="apellido" class="text-secondary">Apellido:</label>
+                        <input type="text" th:field="*{apeusuario}" class="form-control" id="apellido" placeholder="Apellido de usuario" required>
+                    </div>
+                    <div class="row-form">
+                        <label for="email" class="text-secondary">Email:</label>
+                        <input type="email" th:field="*{emailusuario}" class="form-control" id="email" placeholder="Email de usuario" required>
+                    </div>
+                    <div class="row-form">
+                        <label for="telefono" class="text-secondary">Teléfono:</label>
+                        <input type="text" th:field="*{teleusuario}" class="form-control" id="telefono" placeholder="Teléfono de Usuario" required>
+                    </div>
+                    <div class="row-form">
+                        <label for="password" class="text-secondary">Contraseña:</label>
+                        <input type="password" th:field="*{passusuario}" class="form-control" id="password" placeholder="Contraseña de Usuario" required>
+                    </div>
+                    <div class="row-form">
+                        <label for="tipo" class="text-secondary">Rol:</label>
+                        <select id="tipo" th:field="*{rol.idrol}" class="form-control" required>
+                            <option value="">Seleccione</option>
+                            <option th:each="r : ${listarol}" th:value="${r.idrol}" th:text="${r.nomrol}"></option>
+                        </select>
+
+                    </div>
+                    <div class="row-form">
+                        <label class="text-secondary"></label>
+                        <button type="submit" class="btn btn-info mt-4">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <div th:replace="~{fragments/footer::footer}">...</div>
+    <!-- FOOTER -->
+</div>
+</body>
+</html>

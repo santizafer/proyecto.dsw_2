@@ -1,0 +1,24 @@
+<div class="menu-admin" th:fragment="menu2"  xmlns:th="http://www.w3.org/1999/xhtml">
+    <ul>
+        <li><a th:href="@{~/admin}"><i class="fa-solid fa-house"></i> Inicio</a></li>
+        <li><a th:href="@{~/listadousuarios}"><i class="fa-regular fa-user"></i> Usuarios</a>
+            <ul>
+                <li><a th:href="@{~/listadousuarios}">Ver usuarios</a></li>
+                <li><a th:href="@{~/nuevousuario}">Crear usuario</a></li>
+            </ul>
+        </li>
+        <li><a th:href="@{~/listadodestinos}"><i class="fa-solid fa-location-dot"></i> Destinos</a>
+            <ul>
+                <li><a th:href="@{~/listadodestinos}">Ver destinos</a></li>
+                <li><a th:href="@{~/nuevodestino}">Crear destino</a></li>
+            </ul>
+        </li>
+        <li><a th:href="@{~/listadoreservas}"><i class="fa-regular fa-calendar-check"></i> Reservas</a>
+            <ul>
+                <li><a th:href="@{~/listadoreservas}">Ver reservas</a></li>
+                <li><a th:href="@{~/nuevareserva}">Crear reserva</a></li>
+            </ul>
+        </li>
+        <li><a th:href="@{~/admin}"><i class="fa-regular fa-star"></i> Estados</a></li>
+    </ul>
+</div>

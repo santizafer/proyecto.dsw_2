@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&amp;family=Pacifico&amp;family=Source+Sans+Pro:wght@300;400;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" th:href="@{/css/styles.css?t=1669763304031}">
+    <link rel="stylesheet" th:href="@{/css/forms.css?t=1669763303753}">
+    <link rel="icon" type="image/png" sizes="16x16" href="./../../images/favicon-16x16.png">
+    <title>Tu Callao - Picardía Sabor y Sazón | Tu Callao</title>
+</head>
+<body class="page-single">
+<div id="container">
+    <!-- HEADER -->
+    <div th:replace="~{fragments/header::header}">...</div>
+    <!-- HEADER -->
+    <div class="banner-top"><img src="../../images/banner-internas.jpg" alt="Chucuito"></div>
+    <main>
+        <h1>Galería de Videos</h1>
+        <div id="compartir"><a class="fb" href="" target="_blank"><i class="fa-brands fa-facebook"></i></a><a class="tw" href="" target="_blank"><i class="fa-brands fa-twitter"></i></a><a class="wa" href="" target="_blank"><i class="fa-brands fa-whatsapp"></i></a><a class="in" href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+        <p>Visita nuestra galería de videos:</p>
+        <div id="video-container">
+            <div id="video-list"><a href="#video" video_id="cOscmT5f2_Y" video_caption="Real Felipe: atractivo turístico del Callao con historia"><img src="../images/loading.gif"></a>
+                <a href="#video" video_id="lhGRdoSgtgI" video_caption="MONUMENTAL CALLAO | La PUNTA | ¿Qué HACER?"><img src="../images/loading.gif"></a>
+                <a href="#video" video_id="HDHQi-rrj2k" video_caption="El callao en mi corazón"><img src="../images/loading.gif"></a>
+                <a href="#video" video_id="t-SOhcRk2pY" video_caption="Probando el Callo"><img src="../images/loading.gif"></a>
+                <a href="#video" video_id="RW48JQhTfBI" video_caption="Chucuito Callao Peru"><img src="../images/loading.gif"></a>
+                <a href="#video" video_id="w1QM9rCOXmA" video_caption="Fortaleza Real Felipe - Callao, Perú"><img src="../images/loading.gif"></a>
+                <a href="#video" video_id="o4wNSTrsSXk" video_caption="VISITANDO LA MACABRA ISLA DEL FRONTON EN EL CALLAO - PERÚ"><img src="../images/loading.gif"></a>
+                <a href="#video" video_id="f7EGZfVx1cg" video_caption="EL CALLAO PERU 🇵🇪 UN LUGAR INFRAVALORADO | ARTE Y CULTURA EN CADA RINCON | MONUMENTAL y LA PUNTA"><img src="../images/loading.gif"></a>
+                <a href="#video" video_id="zhjU-PIeaLU" video_caption="UNA DE LAS FORTALEZAS MÁS ANTIGUAS DEL MUNDO 🏰👻 REAL FELIPE / CALLAO"><img src="../images/loading.gif"></a>
+                <a href="#video" video_id="pYrBoWAY3uY" video_caption="La Punta | 3 Tours Imperdibles | Real Felipe | Submarino | Paseo en Bote | ¿Cúanto sale?"><img src="../images/loading.gif"></a>
+            </div><div id="video-content">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EGXJB5hIejw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div id="video-caption"><i class="fa-solid fa-video"></i> <span class="text">Nevado Pastoruri Ancash Perú</span></div>
+        </div>
+        </div>        
+    </main>
+    <!-- FOOTER -->
+    <div th:replace="~{fragments/footer::footer}">...</div>
+    <!-- FOOTER -->
+</div>
+</body>
+</html>

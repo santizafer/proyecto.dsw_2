@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&amp;family=Pacifico&amp;family=Source+Sans+Pro:wght@300;400;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" th:href="@{/css/styles.css?t=1669763304031}">
+    <link rel="stylesheet" th:href="@{/css/forms.css?t=1669763303753}">
+    <link rel="icon" type="image/png" sizes="16x16" href="./../../images/favicon-16x16.png">
+    <title>Tu Callao - Picardía Sabor y Sazón | Tu Callao</title>
+</head>
+<body class="page-single">
+<div id="container">
+    <!-- HEADER -->
+    <div th:replace="~{fragments/header::header}">...</div>
+    <!-- HEADER -->
+    <div class="banner-top"><img src="../../images/banner-internas.jpg" alt="Chucuito"></div>
+    <main>
+        <h1>Zona Monumental del Callao</h1>
+        <jsp:include page="MODULES/compartir.jsp" />
+        <p><strong>La Zona Monumental del Callao es el casco histórico en el distrito del Callao, en el Provincia Constitucional del Callao.</strong></p>
+        <p>Conoce Monumental Callao, el que fue uno de los barrios más picantes y es hoy uno de los referentes más importantes de arte y transformación social en el Perú. Recorre la emblemática zona patrimonial del puerto y sus calles históricas entre El Real Felipe, La Plaza Grau, La Plaza Matriz, La Plaza Gálvez y el antiguo edificio Ronald a través del arte, la música, gastronomía, historia, el arte urbano y su cultura viva.</p>
+        <h2>Historia</h2>
+        <p>Exploramos las icónicas calles y las joyas arquitectónicas del Centro Histórico del Callao entre El Real Felipe, La Plaza Grau, La Plaza Matriz, La Plaza Gálvez y el puerto.El guiado se complementa con un circuito histórico interactivo de códigos QR con las reseñas de Deolinda Villa y Elvira Valenzuela Saldaña, Historiadoras de la Dirección de Patrimonio Histórico Inmueble del Ministerio de Cultura del Perú, que permitirá al público en general encontrar en la zona 10 puntos claves de su pasado.</p>
+        <p>Puedes seguir una ruta de grafitis. En esta zona podrás encontrar más de 60 murales realizados no solo por artistas nacionales, sino también provenientes de distintos países de Latinoamérica. Aunque puedes hacer la visita por tu cuenta sin ningún costo, te recomendamos tomar el tour que ofrecen aquí, ya que te brindarán más detalles sobre este tipo de arte. El costo por persona es de S/25.</p>
+        <figure><img src="../images/monumental/monumental.jpg" alt="Zona Monumental del Callao">
+            <figcaption>Zona Monumental del Callao</figcaption>
+        </figure>
+        <p>Disfrutarás del arte. En los alrededores de Monumental Callao, podrás encontrar más de 10 galerías y salas de exposiciones. El ingreso no tiene ningún costo si decides hacer el recorrido por tu cuenta, y las temáticas son variadas, desde motivos amazónicos hasta fotografías de viajes, entre otros. También podrás encontrar diversas tiendas de moda.</p>
+        <p>Probarás  variadas y exquisitas propuestas gastronómicas. En la zona encontrarás opciones para todos los gustos. Hay un huarique llamado El Comedor, que rescata deliciosos platos de antaño. Pero si lo tuyo son los pescados y mariscos, te recomendamos visitar el restaurante Mateo, y probar su jalea o arroz con mariscos. Para los más dulceros, el 'point' ideal es la pastelería Ítalo. En este enlace revista la lista de todos los restaurantes que podrás encontrar.</p>
+        <p>Disfrutarás de imperdibles shows artísticos. Bailes, conciertos y cuenta cuentos son solo algunas de las actividades que se ofrecen en el lugar, una de las cosas que lo convierten en un lugar ideal para visitar en familia. Por lo general, estas actividades se realizan los días sábados. Puedes revisar las redes sociales de Monumental Callao para encontrar la agenda de la semana.</p>
+        <figure><img src="../images/monumental/monumental-2.jpg" alt="Zona Monumental del Callao">
+            <figcaption>Zona Monumental del Callao</figcaption>
+        </figure>
+        <p>Serás parte de talleres alternativos. ¿Te animarías a inscribir a tu hijo en una clase de grafiti? Sin duda una experiencia nueva y que en Monumental Callao podrá realizar sin problemas. El costo es de S/50 e incluye materiales. El horario para ser parte de dicha actividad es de 11 a.m a 3 p.m. Informes: 989 263 955 / graffiti-lesson@hotmail.com.</p>
+        <p>Fuente:
+            <cite>https://www.monumentalcallao.com/, https://elcomercio.pe</cite>
+        </p>
+        <div class="comments-form">
+            <h3>Déjanos tu comentario:</h3>
+            <form action="" name="comments">
+                <div class="col1">
+                    <div class="row-form row-inputs">
+                        <div class="tit">¿Qué impresión te dejó?</div>
+                        <label>
+                            <input type="radio" name="caritas" value="in-love" checked><img src="../images/in-love.png" alt="Feliz">
+                        </label>
+                        <label>
+                            <input type="radio" name="caritas" value="neutral"><img src="../images/neutral.png" alt="Neutral">
+                        </label>
+                        <label>
+                            <input type="radio" name="caritas" value="sad"><img src="../images/sad.png" alt="Triste">
+                        </label>
+                        <label>
+                            <input type="radio" name="caritas" value="angry"><img src="../images/angry.png" alt="molesto">
+                        </label>
+                        <label>
+                            <input type="radio" name="caritas" value="llanto"><img src="../images/llanto.png" alt="molesto">
+                        </label>
+                    </div>
+                    <div class="row-form">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="row-form">
+                        <input type="text" name="titulo" placeholder="Titulo del comentario">
+                    </div>
+                    <div class="row-form">
+                        <input type="text" name="nombre" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div class="row-form">
+                        <input type="text" name="email" placeholder="Ingresa tu email">
+                    </div>
+                    <div class="row-form">
+                        <input type="submit" value="Enviar Comentario">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="comments-comment">
+            <div class="comments-items-title">Comentarios:</div>
+            <div class="comment-items-content">
+                <div class="item">
+                    <div class="comment-title">Un lugar hermoso<img src="../images/in-love.png" alt="Feliz"></div>
+                    <div class="comment-message">Es un lugar hermoso y acogedor, sus casitas de color y su rica comida son los más destacable de este bello y rico puerto chalaco, y que decir de su gente, es muy calida y cariñosa, recomiendo totalmente este lugar para pasar un fin de semana en familia.</div>
+                    <div class="comment-contact">
+                        <div class="comment-name">Maria</div>
+                        <div class="comment-email">mariamer@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </main>
+    <!-- FOOTER -->
+    <div th:replace="~{fragments/footer::footer}">...</div>
+    <!-- FOOTER -->
+</div>
+</body>
+</html>
