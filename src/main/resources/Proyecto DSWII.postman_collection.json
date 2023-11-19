@@ -1,0 +1,934 @@
+{
+	"info": {
+		"_postman_id": "44a21af1-1463-4b89-b1e2-69d7d769ba77",
+		"name": "Proyecto DSWII",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29492211"
+	},
+	"item": [
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Usuario",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nomusuario\": \"claudiaza\",\r\n    \"apeusuario\": \"preciado\",\r\n    \"emailusuario\": \"sara@gmail.com\",\r\n    \"teleusuario\": \"998008615\",\r\n    \"passusuario\": \"123456\",\r\n    \"estadousuario\": true,\r\n    \"rol\": {\r\n        \"idrol\": 1,\r\n        \"nomrol\": \"ADMIN\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/usuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuario FiItro ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nomusuario\": \"claudiaza\",\r\n    \"apeusuario\": \"preciado\",\r\n    \"emailusuario\": \"sara@gmail.com\",\r\n    \"teleusuario\": \"998008615\",\r\n    \"passusuario\": \"123456\",\r\n    \"estadousuario\": true,\r\n    \"rol\": {\r\n        \"idrol\": 1,\r\n        \"nomrol\": \"ADMIN\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/usuario/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"usuario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuario FiItro  name",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nomusuario\": \"claudiaza\",\r\n    \"apeusuario\": \"preciado\",\r\n    \"emailusuario\": \"sara@gmail.com\",\r\n    \"teleusuario\": \"998008615\",\r\n    \"passusuario\": \"123456\",\r\n    \"estadousuario\": true,\r\n    \"rol\": {\r\n        \"idrol\": 1,\r\n        \"nomrol\": \"ADMIN\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/usuario/name/a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"usuario",
+								"name",
+								"a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuario DTO",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nomusuario\": \"marilli\",\r\n    \"apeusuario\": \"preciado\",\r\n    \"emailusuario\": \"sara@gmail.com\",\r\n    \"teleusuario\": \"998008615\",\r\n    \"passusuario\": \"123456\",\r\n    \"estadousuario\": true,\r\n    \"rol\": {\r\n        \"idrol\": 2\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/usuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuario",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nomusuario\": \"lizbeth\",\r\n    \"apeusuario\": \"preciadoxx\",\r\n    \"emailusuario\": \"sara@gmail.comxx\",\r\n    \"teleusuario\": \"999999999\",\r\n    \"passusuario\": \"123456789\",\r\n    \"estadousuario\": false,\r\n    \"rol\": {\r\n        \"idrol\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/usuario/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"usuario",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuario",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nomusuario\": \"lizbeth\",\r\n    \"apeusuario\": \"preciadoxx\",\r\n    \"emailusuario\": \"sara@gmail.comxx\",\r\n    \"teleusuario\": \"999999999\",\r\n    \"passusuario\": \"123456789\",\r\n    \"estadousuario\": false,\r\n    \"rol\": {\r\n        \"idrol\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/usuario/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"usuario",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reserva",
+			"item": [
+				{
+					"name": "Reserva",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/reserva",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"reserva"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reserva Filtro ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/reserva/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"reserva",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reserva Filtro name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/reserva/name/a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"reserva",
+								"name",
+								"a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reserva DTO",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/reserva/dto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"reserva",
+								"dto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reserva",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"fecharegistro\": \"2023-11-17 00:00:00\",\r\n        \"fechareserva\": \"2023-11-17\",\r\n        \"horareserva\": \"15:00:00\",\r\n        \"numeropersonasreserva\": 10,\r\n        \"infreserva\": \"Si el tour me va bien, los recomendaré\",\r\n        \"usuario\": {\r\n            \"codusuario\": 1\r\n        },\r\n        \"destino\": {\r\n            \"coddestino\": 1\r\n        },\r\n        \"estado\": {\r\n            \"codestado\": 1\r\n        },\r\n        \"pago\": {\r\n            \"codpago\": 1\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/reserva",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"reserva"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reserva",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"fecharegistro\": \"2023-11-17 00:00:00\",\r\n        \"fechareserva\": \"2023-11-17\",\r\n        \"horareserva\": \"20:00:00\",\r\n        \"numeropersonasreserva\": 2,\r\n        \"infreserva\": \"Reserva actualizada\",\r\n        \"usuario\": {\r\n            \"codusuario\": 2\r\n        },\r\n        \"destino\": {\r\n            \"coddestino\": 1\r\n        },\r\n        \"estado\": {\r\n            \"codestado\": 1\r\n        },\r\n        \"pago\": {\r\n            \"codpago\": 1\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/reserva/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"reserva",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reserva",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"fecharegistro\": \"2023-11-17 00:00:00\",\r\n        \"fechareserva\": \"2023-11-17\",\r\n        \"horareserva\": \"20:00:00\",\r\n        \"numeropersonasreserva\": 2,\r\n        \"infreserva\": \"Reserva actualizada\",\r\n        \"usuario\": {\r\n            \"codusuario\": 2\r\n        },\r\n        \"destino\": {\r\n            \"coddestino\": 1\r\n        },\r\n        \"estado\": {\r\n            \"codestado\": 1\r\n        },\r\n        \"pago\": {\r\n            \"codpago\": 1\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/reserva/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"reserva",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Destino",
+			"item": [
+				{
+					"name": "Destino",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/destino",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"destino"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destino Filtro ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/destino/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"destino",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destino Filtro name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/destino/name/a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"destino",
+								"name",
+								"a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destino Dto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/destino/dto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"destino",
+								"dto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destino",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"nomdestino\": \"Callao Castilla\",\r\n        \"desdestino\": \"Lugar de entretenimento en Castilla\",\r\n        \"predestino\": 30.0,\r\n        \"categoria\": {\r\n            \"codcategoria\": 3\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/destino",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"destino"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destino",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"nomdestino\": \"Callao Castilla xxxx\",\r\n        \"desdestino\": \"Lugar de entretenimento en Castilla xxx\",\r\n        \"predestino\": 20.0,\r\n        \"categoria\": {\r\n            \"codcategoria\": 2\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/destino/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"destino",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destino",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"nomdestino\": \"Callao Castilla xxxx\",\r\n        \"desdestino\": \"Lugar de entretenimento en Castilla xxx\",\r\n        \"predestino\": 20.0,\r\n        \"categoria\": {\r\n            \"codcategoria\": 2\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/destino/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"destino",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categoria",
+			"item": [
+				{
+					"name": "Categoria",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/categoria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"categoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Categoria Filtro ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/categoria/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"categoria",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Categoria Filtro Name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/categoria/name/a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"categoria",
+								"name",
+								"a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Categoria Dto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/categoria/dto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"categoria",
+								"dto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Categoria",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"nomcategoria\": \"Otro Cat\",\r\n        \"descategoria\": \"Otra categoria :D\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/categoria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"categoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Categoria",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"nomcategoria\": \"Otro Cat xxx\",\r\n        \"descategoria\": \"Otra categoria :D xxx\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/categoria/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"categoria",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Categoria",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"nomcategoria\": \"Otro Cat xxx\",\r\n        \"descategoria\": \"Otra categoria :D xxx\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/categoria/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"categoria",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Estado",
+			"item": [
+				{
+					"name": "Estado",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/estado",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"estado"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Estado Filtro ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/estado/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"estado",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Estado Filtro name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/estado/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"estado",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Estado",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"nomestado\": \"Otro estado\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/estado",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"estado"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Estado",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"nomestado\": \"Otro estado actualizado\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/estado/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"estado",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Estado",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"nomestado\": \"Otro estado actualizado\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/estado/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"estado",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
