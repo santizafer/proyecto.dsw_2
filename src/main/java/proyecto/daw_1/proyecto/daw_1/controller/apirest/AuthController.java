@@ -66,7 +66,7 @@ public class AuthController {
                                         .map(GrantedAuthority::getAuthority)
                                         .collect(Collectors.toList()))
                         .setIssuedAt(new Date(System.currentTimeMillis()))
-                        .setExpiration(new Date(System.currentTimeMillis() + 300000))
+                        .setExpiration(new Date(System.currentTimeMillis() + 3600000))
                         .signWith(SignatureAlgorithm.HS512, clave.getBytes())
                         .compact();
         return  token;

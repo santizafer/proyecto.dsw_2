@@ -17,6 +17,7 @@ import proyecto.daw_1.proyecto.daw_1.util.DtoUtil;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+
 @PreAuthorize("hasRole('ADMIN')")
 @AllArgsConstructor
 @RestController
@@ -96,6 +97,7 @@ public class UsuarioRestController {
         oldUsuario.setTeleusuario(usuario.getTeleusuario());
         oldUsuario.setPassusuario(usuario.getPassusuario());
         oldUsuario.setEstadousuario(usuario.getEstadousuario());
+        oldUsuario.setRoles(usuario.getRoles());
         return new ResponseEntity<>(
                 usuarioService.guardar(oldUsuario), HttpStatus.OK
         );

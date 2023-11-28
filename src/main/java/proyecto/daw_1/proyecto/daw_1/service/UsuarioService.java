@@ -38,7 +38,7 @@ public class UsuarioService {
         usuario.setPassusuario(bCryptPasswordEncoder.encode(
                 usuario.getPassusuario()));
         usuario.setEstadousuario(true);
-        Rol usuarioRol = rolRepository.findByNomrol("ADMIN");
+        Rol usuarioRol = rolRepository.findByNomrol("ROLE_ADMIN");
         usuario.setRoles(new HashSet<>(Arrays.asList(usuarioRol)));
         return usuarioRepository.save(usuario);
     }

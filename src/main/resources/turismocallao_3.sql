@@ -24,6 +24,7 @@ ESTADOUSUARIO BOOLEAN DEFAULT 1 NOT NULL
 CREATE TABLE USUARIO_ROL(
 CODUSUARIO INT(6) NOT NULL,
 IDROL INT(6) NOT NULL,
+CONSTRAINT USER_ROLE_PK PRIMARY KEY (CODUSUARIO, IDROL),
 CONSTRAINT FK_USUARIO FOREIGN KEY (CODUSUARIO) REFERENCES USUARIO(CODUSUARIO),
 CONSTRAINT FK_TIPOUSUARIO FOREIGN KEY (IDROL) REFERENCES ROL(IDROL)
 );
@@ -120,10 +121,10 @@ INSERT INTO RESERVA VALUES(null, "2023-06-02", "2023-06-03", "14:00:00", 1, "Lo 
 select * from destino;
 select * from categoria;
 select * from estado;
-select * from rol;
-select * from usuario;
 select * from reserva;
 select * from pago;
+select * from rol;
+select * from usuario;
 select * from usuario_rol;
 
 delete from usuario where codusuario = 2;
