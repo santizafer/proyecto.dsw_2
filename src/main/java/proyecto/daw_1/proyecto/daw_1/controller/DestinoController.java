@@ -20,32 +20,26 @@ public class DestinoController {
         model.addAttribute("listadestinos", destinoService.listarDestinos());
         return "listadodestinos";
     }
-
     @GetMapping("/nuevodestino")
     public String registrar(Model model) {
         Destino destino = new Destino();
         model.addAttribute("destino", destino);
         return "nuevodestino";
     }
-
     @PostMapping("/guardardestino")
     public String guardarDestino(@ModelAttribute("destino") Destino destino) {
         destinoService.guardar(destino);
         return "nuevodestino";
     }
-
     @GetMapping("/actualizardestino/{id}")
     public String actualizar_destino(@PathVariable("id") Integer id, Model model) {
         Optional<Destino> destino = destinoService.obtenerDestinoPorId(id);
         model.addAttribute("destino", destino);
         return "/actualizardestino";
     }
-
     @GetMapping("/eliminardestino/{id}")
     public String eliminar_destino(@PathVariable("id") Integer id){
         destinoService.eliminarDestino(id);
         return "redirect:/listadodestinos";
     }
-
-
 }

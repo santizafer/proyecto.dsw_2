@@ -24,11 +24,8 @@ import java.util.stream.Collectors;
 @Controller
 @RequestMapping(path = "api/v1/usuario")
 public class UsuarioRestController {
-
     private UsuarioService usuarioService;
-
     private RolRepository tipoUsuarioRepository;
-
     @GetMapping("")
     public ResponseEntity<List<Usuario>> listarUsuarios() {
         List<Usuario> usuarioList = new ArrayList<>();
@@ -39,7 +36,6 @@ public class UsuarioRestController {
             return new ResponseEntity<>(usuarioList, HttpStatus.OK);
         }
     }
-
     @GetMapping("/dto")
     public ResponseEntity<List<DtoEntity>> listarUsuariosDto() {
         List<DtoEntity> reservaList = new ArrayList<>();
@@ -63,7 +59,6 @@ public class UsuarioRestController {
                         id + " no existe."));
         return new ResponseEntity<>(usuario, HttpStatus.OK);
     }
-
     @GetMapping("/name/{filtro}")
     public ResponseEntity<List<Usuario>> filtrarUsuariosPorNombre(
             @PathVariable("filtro") String filtro){
@@ -80,7 +75,6 @@ public class UsuarioRestController {
     public ResponseEntity<Usuario> registrarUsuario(@RequestBody Usuario usuario) {
         return new ResponseEntity<>(usuarioService.guardar(usuario), HttpStatus.CREATED);
     }
-
     @PutMapping("/{id}")
     public ResponseEntity<Usuario> actualizarUsuario(
             @PathVariable("id") Integer id,
@@ -108,6 +102,4 @@ public class UsuarioRestController {
         usuarioService.eliminarUsuario(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
-
-
 }
