@@ -1,6 +1,7 @@
 package proyecto.daw_1.proyecto.daw_1.service;
 
 import lombok.AllArgsConstructor;
+import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
@@ -40,6 +41,12 @@ public class DetalleUsuarioService implements UserDetailsService {
     }
     private UserDetails autenticacionUsuario(Usuario usuario,
                                              List<GrantedAuthority> authorityList){
+
+        // Comprobar si el usuario tiene roles asignados
+        if (usuario.getRoles().isEmpty()) {
+            throw new AccessDeniedException("El usuario no tiene roles asignados");
+        }
+
         return new User(usuario.getNomusuario(),
                 usuario.getPassusuario(),
                 usuario.getEstadousuario(),
