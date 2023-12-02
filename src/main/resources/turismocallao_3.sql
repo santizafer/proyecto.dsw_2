@@ -77,11 +77,15 @@ INSERT INTO ROL (NOMROL) VALUES ("ROLE_ADMIN");
 INSERT INTO ROL (NOMROL) VALUES ("ROLE_AGENTE");
 
 /*VALUES PARA USUARIOS*/
-INSERT INTO USUARIO VALUES  (null, "osanti", "oswaldo", "santibanez", "oswaldo@gmail.com", "998008615", "$2a$10$I0UhvpP10NYjrZbtZCZ0EONm8kSq7hUBHrMTwIFzIoAdEcDTr0DOe", true);
-INSERT INTO USUARIO VALUES  (null, "spreciado", "sara", "preciado", "sara@gmail.com", "998008615", "$2a$10$uIKArLTWRXrrybZYM5NY0.EM/eDO.73f9n7c8S2sbjKV00jxCXu/q", true);
+INSERT INTO USUARIO VALUES  (1, "osanti", "oswaldo", "santibanez", "oswaldo@gmail.com", "998008615", "$2a$10$I0UhvpP10NYjrZbtZCZ0EONm8kSq7hUBHrMTwIFzIoAdEcDTr0DOe", true);
+INSERT INTO USUARIO VALUES  (2, "paz", "cesar", "falcon", "cesar@gmail.com", "922057820", "$2a$10$uIKArLTWRXrrybZYM5NY0.EM/eDO.73f9n7c8S2sbjKV00jxCXu/q", true);
+INSERT INTO USUARIO VALUES  (3, "molina", "eduardo", "carrion", "eduardo@gmail.com", "964867134", "$2a$10$uIKArLTWRXrrybZYM5NY0.EM/eDO.73f9n7c8S2sbjKV00jxCXu/q", true);
+INSERT INTO USUARIO VALUES  (4, "novoa", "luis", "fernando", "luiso@gmail.com", "963424002", "$2a$10$uIKArLTWRXrrybZYM5NY0.EM/eDO.73f9n7c8S2sbjKV00jxCXu/q", true);
 
 INSERT INTO USUARIO_ROL VALUES (1, 1);
-INSERT INTO USUARIO_ROL VALUES (2, 2);
+INSERT INTO USUARIO_ROL VALUES (2, 1);
+INSERT INTO USUARIO_ROL VALUES (3, 2);
+INSERT INTO USUARIO_ROL VALUES (4, 2);
 
 /*VALUES PARA PAGOS*/
 INSERT INTO PAGO VALUES(1, "Efectivo");

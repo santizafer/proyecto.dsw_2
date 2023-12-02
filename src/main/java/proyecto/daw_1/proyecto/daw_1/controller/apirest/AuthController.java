@@ -40,11 +40,16 @@ public class AuthController {
                     );
             if(authentication.isAuthenticated()){
                 Usuario objUsuario = detalleUsuarioService.findByNomusuario(usuario);
-                String token = generarToken(objUsuario);
-                UsuarioResponse usuarioResponse = new UsuarioResponse(
-                        objUsuario.getCodusuario(), objUsuario.getNomusuario(), token
-                );
-                return new ResponseEntity<>(usuarioResponse, HttpStatus.OK);
+                // Añadir nueva comprobación de seguridad
+                if(objUsuario.getEstadousuario().equals(true)){
+                    String token = generarToken(objUsuario);
+                    UsuarioResponse usuarioResponse = new UsuarioResponse(
+                            objUsuario.getCodusuario(), objUsuario.getNomusuario(), token
+                    );
+                    return new ResponseEntity<>(usuarioResponse, HttpStatus.OK);
+                }else{
+                    return new ResponseEntity<>(null, HttpStatus.FORBIDDEN);
+                }
             }else
                 return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }catch (Exception ex){
